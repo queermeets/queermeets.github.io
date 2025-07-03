@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Queer Meets</title>
-  <style>
+<style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -13,17 +13,25 @@
       color: #333;
     }
 
+    .photo-header {
+      width: 100%;
+      height: 300px;
+      background-image: url('header-photo.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
     header {
       background-color: #800000;
       color: white;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
       position: relative;
     }
 
     header img.logo {
       max-height: 80px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     nav {
@@ -108,22 +116,27 @@
       padding: 40px 20px;
     }
 
-    .subscribe input[type="email"] {
-      padding: 10px;
-      width: 250px;
-      border: none;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-
-    .subscribe button {
-      padding: 10px 20px;
+    .subscribe a.button {
+      display: inline-block;
+      padding: 12px 24px;
       background-color: #f5f1eb;
       color: #800000;
-      border: none;
       border-radius: 5px;
       font-weight: bold;
-      cursor: pointer;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .socials a img {
+      width: 40px;
+      height: 40px;
     }
 
     footer {
@@ -137,9 +150,8 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="Queer Meets Logo" class="logo">
-    <h1>Queer Meets</h1>
-    <p>Wholesome meetups for Toronto's sapphic community! 🌸🎨.</p>
+    <img src="queermeets.png" alt="Queer Meets Logo" class="logo">
+    <p>Creating thoughtful spaces for queer community, creativity, and connection.</p>
   </header>
 
   <nav>
@@ -187,34 +199,24 @@
     <h2>Events So Far</h2>
     <div class="events-grid">
       <div class="event-tile">
-        <img src="event1.jpg" alt="Tote Bag Painting">
+        <img src="totebag.jpg" alt="Tote Bag Painting">
         <h3>Tote Bag Painting</h3>
         <p>Paint your tote bag to carry around the city.</p>
       </div>
       <div class="event-tile">
-        <img src="event2.jpg" alt="Carabiner">
+        <img src="carabiner.jpg" alt="Carabiner">
         <h3>DIY Carabiners</h3>
         <p>Decorate your own carabiner with keychains and charms.</p>
       </div>
       <div class="event-tile">
-        <img src="event3.jpg" alt="Blackout Poetry">
+        <img src="blackout.jpg" alt="Blackout Poetry">
         <h3>Blackout Poetry</h3>
         <p>Black out words from pages in a book and create your own poems.</p>
       </div>
       <div class="event-tile">
-        <img src="event4.jpg" alt="Linocut Stamps">
+        <img src="linocuts.jpg" alt="Linocut Stamps">
         <h3>Linocut Stamps</h3>
         <p>Carve out your own rubber stamps to use on cards, shirts, tote bags.</p>
-      </div>
-      <div class="event-tile">
-        <img src="event2.jpg" alt="Craft Night">
-        <h3>DIY Carabiners</h3>
-        <p>Decorate your own carabiner with keychains and charms.</p>
-      </div>
-      <div class="event-tile">
-        <img src="placeholder.jpg" alt="Upcoming Event">
-        <h3>Coming Soon</h3>
-        <p>Stay tuned for our next creative gathering!</p>
       </div>
     </div>
   </section>
@@ -222,10 +224,15 @@
   <section class="subscribe">
     <h2>Subscribe to Our Newsletter</h2>
     <p>Be the first to hear about our upcoming events and announcements.</p>
-    <form action="#" method="post">
-      <input type="email" placeholder="Your email address" required>
-      <button type="submit">Subscribe</button>
-    </form>
+    <a href="https://forms.gle/hNfwYQnU7nDqYUm39" target="_blank" class="button">Subscribe Now</a>
+    <div class="socials">
+      <a href="https://instagram.com/queermeets" target="_blank">
+        <img src="instagram-icon.png" alt="Instagram">
+      </a>
+      <a href="https://tiktok.com/@queer.meets" target="_blank">
+        <img src="tiktok-icon.png" alt="TikTok">
+      </a>
+    </div>
   </section>
 
   <footer>
