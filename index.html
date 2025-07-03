@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queer Meets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f1eb;
+      color: #333;
+    }
+
+    header {
+      background-color: #800000;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+      max-height: 80px;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      background-color: #a52a2a;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #800000;
+      margin-bottom: 20px;
+    }
+
+    .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .team-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .team-member {
+      background-color: #ffffff;
+      border: 2px solid #800000;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      width: 220px;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .event-tile {
+      background-color: #fff;
+      border: 2px solid #a52a2a;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .event-tile img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .subscribe {
+      background-color: #800000;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .subscribe input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .subscribe button {
+      padding: 10px 20px;
+      background-color: #f5f1eb;
+      color: #800000;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #a52a2a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Queer Meets Logo" class="logo">
+    <h1>Queer Meets</h1>
+    <p>Creating thoughtful spaces for queer community, creativity, and connection.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#team">Meet the Team</a>
+    <a href="#events">Events</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Queer Meets</h2>
+    <p>Queer Meets is a creative initiative that hosts events for queer folks to connect, express, and build community. From matchbox collaging to friend matchmaking, each event is designed with intention, joy, and inclusivity in mind.</p>
+  </section>
+
+  <section id="team">
+    <h2>Meet the Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="founder.jpg" alt="Founder Photo">
+        <strong>Your Name</strong>
+        <p>Founder & Creative Lead</p>
+      </div>
+      <div class="team-row">
+        <div class="team-member">
+          <img src="friend1.jpg" alt="Event Promotions Lead">
+          <strong>Friend 1</strong>
+          <p>Event & Promotions Lead</p>
+        </div>
+      </div>
+      <div class="team-row">
+        <div class="team-member">
+          <img src="friend2.jpg" alt="Creative Advisor">
+          <strong>Friend 2</strong>
+          <p>Creative Advisor</p>
+        </div>
+        <div class="team-member">
+          <img src="friend3.jpg" alt="Creative Advisor">
+          <strong>Friend 3</strong>
+          <p>Creative Advisor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Events So Far</h2>
+    <div class="events-grid">
+      <div class="event-tile">
+        <img src="event1.jpg" alt="Matchbox Collaging">
+        <h3>Matchbox Collaging + Friend Matchmaking</h3>
+        <p>A two-part event that combined DIY art and new connections.</p>
+      </div>
+      <div class="event-tile">
+        <img src="event2.jpg" alt="Craft Night">
+        <h3>Craft & Connect Night</h3>
+        <p>An open crafting session for queer folks to chat and create together.</p>
+      </div>
+      <div class="event-tile">
+        <img src="placeholder.jpg" alt="Upcoming Event">
+        <h3>Coming Soon</h3>
+        <p>Stay tuned for our next creative gathering!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Be the first to hear about our upcoming events and announcements.</p>
+    <form action="#" method="post">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Queer Meets. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
